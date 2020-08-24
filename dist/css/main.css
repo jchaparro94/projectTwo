@@ -40,6 +40,14 @@ section {
   align-items: center;
   justify-content: center; }
 
+.hotel-name {
+  font-size: 2.6rem; }
+
+.hotel-rating {
+  margin: 1rem 0 2.5rem; }
+  .hotel-rating .rating {
+    color: #fa9e2c; }
+
 .btn-gradiant {
   color: #fff;
   font-size: 1.3rem;
@@ -241,11 +249,28 @@ section {
       top: 0;
       left: 0;
       z-index: -2; }
-    .hotels .container .grid .featured-hotels .hotel-name {
-      font-size: 2.6rem; }
     .hotels .container .grid .featured-hotels .hotel-price {
       font-size: 1.8rem; }
-    .hotels .container .grid .featured-hotels .hotel-rating {
-      margin: 1rem 0 2.5rem; }
-      .hotels .container .grid .featured-hotels .hotel-rating .rating {
-        color: #fa9e2c; }
+
+.offer {
+  background: linear-gradient(to right, rgba(250, 158, 44, 0.8), rgba(143, 80, 251, 0.8)), url("../images/special-offer-bg.jpg") bottom center no-repeat;
+  background-size: cover; }
+  .offer .container .offer-content {
+    background: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+    overflow: hidden; }
+    .offer .container .offer-content .discount {
+      background: #fa9e2c;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      outline: 2px solid #fa9e2c;
+      outline-offset: .5rem; }
+    .offer .container .offer-content .paragraph {
+      color: #a5a5a5;
+      margin-bottom: 2.5rem; }

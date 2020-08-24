@@ -139,12 +139,6 @@
       @include btn;
       background-image: $gradiant-color;
 
-      // .dots {
-      //   font-size: 2.4rem;
-      //   margin-left: .5rem;
-      //   opacity: .75;
-      // }
-
       &:hover {
         background-image: $gradiant-color-alt;
       }
@@ -183,22 +177,6 @@
           font-family: 'Open Sans', sans-serif;
           resize: none;
         }
-      }
-
-      .btn-purple {
-        // @include btn;
-        // @include form-btn;
-        // background-color: $purple-solid;
-
-        // // .dots {
-        // //   font-size: 2.4rem;
-        // //   margin-left: .5rem;
-        // //   opacity: .75;
-        // // }
-
-        // &:hover {
-        //   background-color: #56247f;
-        // }
       }
     }
   }
@@ -257,21 +235,42 @@
           z-index: -2;
         }
 
-        .hotel-name {
-          font-size: 2.6rem;
-        }
-
         .hotel-price {
           font-size: 1.8rem;
         }
+      }
+    }
+  }
+}
 
-        .hotel-rating {
-          margin: 1rem 0 2.5rem;
+// Special Offer Section
+.offer {
+  background: linear-gradient(to right, rgba(250, 158, 44, .8), rgba(143, 80, 251, .8)), url('../images/special-offer-bg.jpg') bottom center no-repeat;
+  background-size: cover;
 
-          .rating {
-            color: $yellow-solid;
-          }
-        }
+  .container {
+    .offer-content {
+      background: #fff;
+      text-align: center;
+      padding: 5rem 1rem;
+      position: relative;
+      overflow: hidden;
+
+      .discount {
+        background: $yellow-solid;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        outline: 2px solid $yellow-solid;
+        outline-offset: .5rem;
+      }
+
+      .paragraph {
+        color: #a5a5a5;
+        margin-bottom: 2.5rem;
       }
     }
   }
