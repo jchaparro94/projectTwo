@@ -1,0 +1,66 @@
+@import 'utilities';
+
+// Header
+.header {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $purple-transparent;
+  z-index: 999;
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      max-width: 80%;
+    }
+
+    .hamburger-menu {
+      font-size: 2.6rem;
+      color: #fff;
+      cursor: pointer;
+      position: relative;
+      z-index: 1500;
+
+      .fa-times {
+        display: none;
+      }
+    }
+
+    .nav-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: $purple-solid;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1400;
+
+      .nav-item {
+        &:not(:last-child) {
+          margin-bottom: .5rem;
+        }
+
+        .nav-link {
+          display: block;
+          color: #fff;
+          font-size: 3rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
