@@ -152,6 +152,8 @@ section {
   left: 0;
   background: rgba(53, 10, 79, 0.7);
   z-index: 999; }
+  .header.active {
+    background-color: #350a4f; }
   .header .nav {
     display: flex;
     align-items: center;
@@ -370,3 +372,31 @@ section {
         transform: scaleX(0);
         transform-origin: left;
         transition: transform .5s; }
+
+.footer {
+  padding: 5rem 0;
+  background-color: #350a4f;
+  color: #fff; }
+  .footer .footer-content-brand {
+    margin-bottom: 5rem; }
+    .footer .footer-content-brand .paragraph {
+      color: inherit; }
+  .footer .social-media-wrap .footer-heading {
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
+  .footer .social-media-wrap .social-media {
+    display: flex; }
+    .footer .social-media-wrap .social-media .sm-link {
+      width: 4rem;
+      height: 4rem;
+      font-size: 2rem;
+      border: 2px solid #fa9e2c;
+      border-radius: 50%;
+      display: flex;
+      margin-right: 1rem;
+      transition: background-color .5s; }
+      .footer .social-media-wrap .social-media .sm-link i {
+        margin: auto; }
+      .footer .social-media-wrap .social-media .sm-link:hover {
+        background-color: #fa9e2c;
+        color: #2d2c2c; }
