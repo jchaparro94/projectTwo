@@ -103,6 +103,35 @@ section {
   margin-bottom: 2.5rem;
 }
 
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input,
+.options {
+  outline: none;
+  border: none;
+  width: 100%;
+  min-height: 4rem;
+  padding: 1rem;
+  font-weight: bold;
+  color: #a5a5a5;
+  letter-spacing: 2px;
+  font-family: 'Open Sans', sans-serif;
+  resize: none;
+}
+
+.contact-form {
+  .input {
+    display: block;
+    background-color: transparent;
+    color: #fff;
+    font-weight: normal;
+    border-bottom: 2px solid #fff;
+    padding-left: 0;
+  }
+}
+
 
 // Mixins 
 @mixin btn {
