@@ -382,6 +382,7 @@
   padding: 5rem 0;
   background-color: $purple-solid;
   color: #fff;
+  overflow: hidden;
 
   .footer-content-brand {
     margin-bottom: 5rem;
@@ -423,3 +424,5 @@
     }
   }
 }
+
+@import 'media';
